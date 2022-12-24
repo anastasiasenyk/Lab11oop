@@ -30,10 +30,8 @@ public class MailSender {
                                         .put(new JSONObject()
                                                 .put("Email", myClient.getEmail())
                                                 .put("Name", myClient.getName())))
-                                .put(Emailv31.Message.SUBJECT, "Greetings from Mailjet.")
-                                .put(Emailv31.Message.TEXTPART, "My first Mailjet email")
-                                .put(Emailv31.Message.HTMLPART, mailInfo.generate(myClient))
-                                .put(Emailv31.Message.CUSTOMID, "AppGettingStartedTest")));
+                                .put(Emailv31.Message.SUBJECT, "Greetings!")
+                                .put(Emailv31.Message.HTMLPART, mailInfo.generate(myClient))));
         response = client.post(request);
         System.out.println(response.getStatus());
         System.out.println(response.getData());

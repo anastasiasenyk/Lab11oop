@@ -16,7 +16,9 @@ public class User {
     private int age;
     private double weight;
     private double height;
-//    @Singular(value = "робота") //якщо ломбок не може створити однину
+
+
+    //    @Singular(value = "робота") //якщо ломбок не може створити однину
     @Singular
     private List<String> occupations;
 

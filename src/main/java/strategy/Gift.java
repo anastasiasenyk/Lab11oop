@@ -8,5 +8,4 @@ public class Gift implements MailCode {
         return TEMPLATE.replaceAll("%NAME", client.getName());
     }
 
-
 }
